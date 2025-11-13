@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>LCD12864的图像直写 | 南华</title><meta name="author" content="Cheng_Yigui"><meta name="copyright" content="Cheng_Yigui"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="LCD12864结构  由于我们的目的是将LCD12864以无字库的方式使用，因此只需要着重考虑GDRAM即可    指令 指令码（RS、RW、DB7、DB6、DB5、DB4、DB3、DB2、DB1、DB0） 说明 执行时间（540KHZ）    功能设定 0 0 0 0 1 DL X RE X X DL&#x3D;1（必须设为 1）RE&#x3D;1：扩充指令集动作RE&#x3D;0：基本指令集">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>LCD12864的图像直写 | 南华</title><meta name="author" content="Cheng_Yigui"><meta name="copyright" content="Cheng_Yigui"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="LCD12864结构  由于我们的目的是将LCD12864以无字库的方式使用，因此只需要着重考虑GDRAM即可    指令 RS RW DB7 DB6 DB5 DB4 DB3 DB2 DB1 DB0 说明 执行时间（540KHZ）    功能设定 0 0 0 0 1 DL X RE X X DL&#x3D;1（必须设为 1）RE&#x3D;1：扩充指令集动作RE&#x3D;0：基本指令集动作 -">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LCD12864的图像直写">
 <meta property="og:url" content="http://example.com/2025/11/14/2025-11-LCD12864/index.html">
 <meta property="og:site_name" content="南华">
-<meta property="og:description" content="LCD12864结构  由于我们的目的是将LCD12864以无字库的方式使用，因此只需要着重考虑GDRAM即可    指令 指令码（RS、RW、DB7、DB6、DB5、DB4、DB3、DB2、DB1、DB0） 说明 执行时间（540KHZ）    功能设定 0 0 0 0 1 DL X RE X X DL&#x3D;1（必须设为 1）RE&#x3D;1：扩充指令集动作RE&#x3D;0：基本指令集">
+<meta property="og:description" content="LCD12864结构  由于我们的目的是将LCD12864以无字库的方式使用，因此只需要着重考虑GDRAM即可    指令 RS RW DB7 DB6 DB5 DB4 DB3 DB2 DB1 DB0 说明 执行时间（540KHZ）    功能设定 0 0 0 0 1 DL X RE X X DL&#x3D;1（必须设为 1）RE&#x3D;1：扩充指令集动作RE&#x3D;0：基本指令集动作 -">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ts2.tc.mm.bing.net/th/id/OIP-C.n2ifjw43hhiEVwU_Mf6baAHaFE?w=310&h=198&c=7&rs=1&bgcl=fffffe&r=0&o=6&cb=ucfimgc1&pid=23.1">
 <meta property="article:published_time" content="2025-11-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-11-13T20:46:03.860Z">
+<meta property="article:modified_time" content="2025-11-13T21:08:03.111Z">
 <meta property="article:author" content="Cheng_Yigui">
 <meta property="article:tag" content="C51">
 <meta property="article:tag" content="MCU">
@@ -19,7 +19,7 @@
   "url": "http://example.com/2025/11/14/2025-11-LCD12864/",
   "image": "https://ts2.tc.mm.bing.net/th/id/OIP-C.n2ifjw43hhiEVwU_Mf6baAHaFE?w=310&h=198&c=7&rs=1&bgcl=fffffe&r=0&o=6&cb=ucfimgc1&pid=23.1",
   "datePublished": "2025-11-13T16:00:00.000Z",
-  "dateModified": "2025-11-13T20:46:03.860Z",
+  "dateModified": "2025-11-13T21:08:03.111Z",
   "author": [
     {
       "@type": "Person",
@@ -161,33 +161,69 @@
   isToc: true,
   pageType: 'post'
 }</script><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="南华" type="application/atom+xml">
-</head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://t.alcy.cc/fj);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">南华</span></a><a class="nav-page-title" href="/"><span class="site-name">LCD12864的图像直写</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">LCD12864的图像直写</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-13T16:00:00.000Z" title="发表于 2025-11-14 00:00:00">2025-11-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-11-13T20:46:03.860Z" title="更新于 2025-11-14 04:46:03">2025-11-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="LCD12864结构"><a href="#LCD12864结构" class="headerlink" title="LCD12864结构"></a>LCD12864结构</h1><p><img src="/2025/11/14/2025-11-LCD12864/image-20251114034517357.png" alt="image-20251114034517357"></p>
+</head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://t.alcy.cc/fj);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">南华</span></a><a class="nav-page-title" href="/"><span class="site-name">LCD12864的图像直写</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">LCD12864的图像直写</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-13T16:00:00.000Z" title="发表于 2025-11-14 00:00:00">2025-11-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-11-13T21:08:03.111Z" title="更新于 2025-11-14 05:08:03">2025-11-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="LCD12864结构"><a href="#LCD12864结构" class="headerlink" title="LCD12864结构"></a>LCD12864结构</h1><p><img src="/2025/11/14/2025-11-LCD12864/image-20251114034517357.png" alt="image-20251114034517357"></p>
 <p><img src="/2025/11/14/2025-11-LCD12864/image-20251114034419225.png" alt="image-20251114034419225"></p>
 <p>由于我们的目的是将LCD12864以无字库的方式使用，因此只需要<code>着重考虑GDRAM</code>即可</p>
 <table>
 <thead>
 <tr>
 <th>指令</th>
-<th>指令码（RS、RW、DB7、DB6、DB5、DB4、DB3、DB2、DB1、DB0）</th>
+<th>RS</th>
+<th>RW</th>
+<th>DB7</th>
+<th>DB6</th>
+<th>DB5</th>
+<th>DB4</th>
+<th>DB3</th>
+<th>DB2</th>
+<th>DB1</th>
+<th>DB0</th>
 <th>说明</th>
 <th>执行时间（540KHZ）</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>功能设定</td>
-<td>0 0 0 0 1 DL X RE X X</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>DL</td>
+<td>X</td>
+<td>RE</td>
+<td>X</td>
+<td>X</td>
 <td>DL&#x3D;1（必须设为 1）RE&#x3D;1：扩充指令集动作RE&#x3D;0：基本指令集动作</td>
 <td>-</td>
 </tr>
 <tr>
 <td>设定绘图 RAM 地址</td>
-<td>0 0 1 AC6 AC5 AC4 AC3 AC2 AC1 AC0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>AC6</td>
+<td>AC5</td>
+<td>AC4</td>
+<td>AC3</td>
+<td>AC2</td>
+<td>AC1</td>
+<td>AC0</td>
 <td>设定 CGRAM 地址到地址计数器（AC）</td>
 <td>72us</td>
 </tr>
 <tr>
 <td>扩充功能设定</td>
-<td>0 0 0 0 1 1 X RE G 0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>X</td>
+<td>RE</td>
+<td>G</td>
+<td>0</td>
 <td>RE&#x3D;1：扩充指令集动作RE&#x3D;0：基本指令集动作G&#x3D;1：绘图显示 ONG&#x3D;0：绘图显示 OFF</td>
 <td>72us</td>
 </tr>
