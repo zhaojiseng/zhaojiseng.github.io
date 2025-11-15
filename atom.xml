@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-11-13T21:08:03.111Z</updated>
+  <updated>2025-11-15T08:34:24.653Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,49 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[Vitis Unified Ide]入门</title>
+    <link href="http://example.com/2025/11/15/2025-11-ZYNQ-1/"/>
+    <id>http://example.com/2025/11/15/2025-11-ZYNQ-1/</id>
+    <published>2025-11-14T16:00:00.000Z</published>
+    <updated>2025-11-15T08:34:24.653Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;note warning flat&quot;&gt;&lt;p&gt;实验前请确保开发板的BOOT处于&lt;code&gt;JTAG&lt;/code&gt;模式&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;实验目的&quot;&gt;&lt;a href=&quot;#实验目的&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Xilinx" scheme="http://example.com/categories/Xilinx/"/>
+    
+    
+    <category term="FPGA" scheme="http://example.com/tags/FPGA/"/>
+    
+    <category term="ARM" scheme="http://example.com/tags/ARM/"/>
+    
+    <category term="ZYNQ" scheme="http://example.com/tags/ZYNQ/"/>
+    
+    <category term="Xilinx" scheme="http://example.com/tags/Xilinx/"/>
+    
+    <category term="Vitis" scheme="http://example.com/tags/Vitis/"/>
+    
+    <category term="Vivado" scheme="http://example.com/tags/Vivado/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LCD12864的图像直写</title>
     <link href="http://example.com/2025/11/14/2025-11-LCD12864/"/>
     <id>http://example.com/2025/11/14/2025-11-LCD12864/</id>
     <published>2025-11-13T16:00:00.000Z</published>
-    <updated>2025-11-13T21:08:03.111Z</updated>
+    <updated>2025-11-15T03:48:25.537Z</updated>
     
     
       
@@ -33,6 +71,8 @@
       
     
     
+    
+    <category term="外设" scheme="http://example.com/categories/%E5%A4%96%E8%AE%BE/"/>
     
     
     <category term="C51" scheme="http://example.com/tags/C51/"/>
